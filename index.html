@@ -6,10 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madam Glamm</title>
     <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="css/nav_mobile.css">
+    <script src="https://kit.fontawesome.com/b7615cb9e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+    <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <div include-html="navigation.html"></div>
+        </ul>
+    </nav>
+
+
+    <nav>
+        <div class="nav-mobile">
+            <div include-html="navigation.html"></div>
+            <button class="btn-nav-mobile"><span class="fas fa-bars"></span></button>
+        </div>
+        <div class="nav-desktop">
+            <div include-html="navigation.html"></div>
+        </div>
+    </nav>
+    <header>
+        <img class="header-logo-img header" src="img/Madame Glamm_logo_new_small.png" alt="logo firmy">
+        <div class="header-text">
+            <p class="header-undertext">Studio Stylizacji Paznokci</p>
+            <img class="header-text-img" src="img/Madame Glamm_logo_tekst_small.png" alt="nazwa firmy">
+        </div>
+    </header>
+
+
+
+    <script src="js/nav-mobile.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

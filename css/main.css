@@ -1,1 +1,85 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333333;
+}
+
+nav .nav-mobile {
+  position: absolute;
+  width: 200px;
+  left: -200px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+nav .nav-mobile ul {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #ca1b7c;
+  padding: 20px;
+}
+
+nav .nav-mobile li {
+  font-size: 30px;
+  padding: 10px;
+}
+
+nav .nav-mobile .btn-nav-mobile {
+  background: none;
+  font-size: 50px;
+  color: black;
+}
+
+nav .nav-desktop {
+  display: none;
+}
+
+nav .active {
+  left: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  height: 100vh;
+}
+
+header .header-logo-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 30px;
+  width: 200px;
+}
+
+header .header-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .header-text .header-text-img {
+  padding-top: 5px;
+  width: 300px;
+}
+
+header .header-text .header-undertext {
+  text-align: right;
+  font-weight: bold;
+  color: #ca1b7c;
+  font-size: 18px;
+}
+/*# sourceMappingURL=main.css.map */

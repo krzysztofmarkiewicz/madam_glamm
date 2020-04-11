@@ -1,0 +1,54 @@
+$main-color: rgb(202,27,124)
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    background-color: #333333
+
+nav
+    .nav-mobile
+        // position: fixed
+        // width: 100%
+        // text-align: center
+        position: absolute
+        width: 200px
+        left: -200px
+        transition: .7s
+
+        ul
+            background-color: rgba(255, 255, 255, 0.8)
+            color: $main-color
+            padding: 20px
+        li
+            font-size: 30px
+            padding: 10px
+        .btn-nav-mobile
+            background: none
+            font-size: 50px
+            color: black
+    .nav-desktop
+        display: none
+    .active
+        left: 0
+header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-color: rgba(255,255,255,1)
+    height: 100vh
+    .header-logo-img
+        align-self: center
+        padding-bottom: 30px
+        width: 200px
+    .header-text
+        align-self: center
+        .header-text-img
+            padding-top: 5px
+            width: 300px
+        .header-undertext
+            text-align: right
+            font-weight: bold
+            color: $main-color
+            font-size: 18px
