@@ -5,34 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madam Glamm</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    
+    <link rel="stylesheet" media="(min-width: 576px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="css/medium.css">
     <link rel="stylesheet" href="css/nav_mobile.css">
     <script src="https://kit.fontawesome.com/b7615cb9e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <button id="burger" class="open-main-nav">
-        <span class="burger"></span>
-        <span class="burger-text">Menu</span>
-    </button>
-    <nav class="main-nav" id="main-nav">
-        <ul>
-            <div include-html="navigation.html"></div>
-        </ul>
-    </nav>
-
-
-    <nav>
-        <div class="nav-mobile">
-            <div include-html="navigation.html"></div>
-            <button class="btn-nav-mobile"><span class="fas fa-bars"></span></button>
-        </div>
-        <div class="nav-desktop">
-            <div include-html="navigation.html"></div>
+    <nav class="nav-mobile">
+        <div class="nav-mobile2"></div>
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+            <span class="burger-text">Menu</span>
+        </button>
+        <div class="main-nav" id="main-nav">
+            <ul>
+                <div include-html="navigation.html"></div>
+            </ul>
         </div>
     </nav>
+
     <header>
         <img class="header-logo-img header" src="img/Madame Glamm_logo_new_small.png" alt="logo firmy">
         <div class="header-text">
@@ -40,6 +34,44 @@
             <img class="header-text-img" src="img/Madame Glamm_logo_tekst_small.png" alt="nazwa firmy">
         </div>
     </header>
+    <main class="wrapper">
+        <nav class="nav-desktop">
+            <ul>
+                <div include-html="navigation.html"></div>
+            </ul>
+        </nav>
+        <section id="about-us">
+            
+            <div class="about-us__box">
+                <div class="about-us__box-text">
+                    <p class="about-us__title">Witamy serdecznie</p>
+                    <p class="about-us__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                        saepe, commodi neque facilis tenetur necessitatibus alias ullam explicabo dignissimos facere
+                        magnam,
+                        possimus et ipsum voluptas inventore molestiae quod in delectus reprehenderit eos! Temporibus ut
+                        aspernatur eos obcaecati iste doloremque velit. Ut placeat est amet blanditiis delectus animi
+                        dignissimos dolorem eius!</p>
+                </div>
+                <div class="about-us__box-img">
+                    <img src="https://unsplash.it/1370/770" alt="Zdjęcie wykonane w studiu Madam Glamm">
+                </div>
+            </div>
+            <div class="about-us__box">
+                <div class="about-us__box-text about-us__box-text--rev">
+                    <p class="about-us__title">Witamy serdecznie</p>
+                    <p class="about-us__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                        saepe, commodi neque facilis tenetur necessitatibus alias ullam explicabo dignissimos facere
+                        magnam,
+                        possimus et ipsum voluptas inventore molestiae quod in delectus reprehenderit eos! Temporibus ut
+                        aspernatur eos obcaecati iste doloremque velit. Ut placeat est amet blanditiis delectus animi
+                        dignissimos dolorem eius!</p>
+                </div>
+                <div class="about-us__box-img about-us__box-img--rev">
+                    <img src="https://unsplash.it/1370/770" alt="Zdjęcie wykonane w studiu Madam Glamm">
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 

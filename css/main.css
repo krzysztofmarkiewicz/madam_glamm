@@ -5,41 +5,17 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
-  background-color: #333333;
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
 }
 
-nav .nav-mobile {
-  position: absolute;
-  width: 200px;
-  left: -200px;
-  -webkit-transition: .7s;
-  transition: .7s;
-}
-
-nav .nav-mobile ul {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #ca1b7c;
-  padding: 20px;
-}
-
-nav .nav-mobile li {
-  font-size: 30px;
-  padding: 10px;
-}
-
-nav .nav-mobile .btn-nav-mobile {
-  background: none;
-  font-size: 50px;
-  color: black;
-}
-
-nav .nav-desktop {
+.nav-desktop {
   display: none;
-}
-
-nav .active {
-  left: 0;
 }
 
 header {
@@ -81,5 +57,58 @@ header .header-text .header-undertext {
   font-weight: bold;
   color: #ca1b7c;
   font-size: 18px;
+}
+
+main .about-us__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  padding: 20px 0;
+}
+
+main .about-us__box .about-us__box-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-image: url("../img/manitools.jpg");
+  background-size: cover;
+  padding: 30px;
+}
+
+main .about-us__box .about-us__box-text .about-us__title {
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+main .about-us__box .about-us__box-text .about-us__text {
+  font-size: 1.6rem;
+}
+
+main .about-us__box .about-us__box-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .about-us__box .about-us__box-img img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
