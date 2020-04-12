@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="(min-width: 576px)" href="css/small.css">
     <link rel="stylesheet" media="(min-width: 768px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width: 992px)" href="css/large.css">
     <link rel="stylesheet" href="css/nav_mobile.css">
     <script src="https://kit.fontawesome.com/b7615cb9e7.js" crossorigin="anonymous"></script>
 </head>
@@ -26,48 +27,67 @@
             </ul>
         </div>
     </nav>
-
+    <nav class="nav-desktop">
+        <ul>
+            <div include-html="navigation.html"></div>
+        </ul>
+    </nav>
     <header>
-        <img class="header-logo-img header" src="img/Madame Glamm_logo_new_small.png" alt="logo firmy">
+        <img class="header-logo-img" src="img/Madame Glamm_logo_new_small.png" alt="logo firmy">
         <div class="header-text">
             <p class="header-undertext">Studio Stylizacji Paznokci</p>
             <img class="header-text-img" src="img/Madame Glamm_logo_tekst_small.png" alt="nazwa firmy">
         </div>
     </header>
-    <main class="wrapper">
-        <nav class="nav-desktop">
-            <ul>
-                <div include-html="navigation.html"></div>
-            </ul>
-        </nav>
+    <main>
         <section id="about-us">
-            
-            <div class="about-us__box">
-                <div class="about-us__box-text">
-                    <p class="about-us__title">Witamy serdecznie</p>
-                    <p class="about-us__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-                        saepe, commodi neque facilis tenetur necessitatibus alias ullam explicabo dignissimos facere
-                        magnam,
-                        possimus et ipsum voluptas inventore molestiae quod in delectus reprehenderit eos! Temporibus ut
-                        aspernatur eos obcaecati iste doloremque velit. Ut placeat est amet blanditiis delectus animi
-                        dignissimos dolorem eius!</p>
-                </div>
-                <div class="about-us__box-img">
-                    <img src="https://unsplash.it/1370/770" alt="Zdjęcie wykonane w studiu Madam Glamm">
-                </div>
+            <div class="about-us__header">
+                <h1>o nas dla Was</h1>
+                <div class="obout-us__header-under"></div>
             </div>
-            <div class="about-us__box">
-                <div class="about-us__box-text about-us__box-text--rev">
-                    <p class="about-us__title">Witamy serdecznie</p>
-                    <p class="about-us__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-                        saepe, commodi neque facilis tenetur necessitatibus alias ullam explicabo dignissimos facere
-                        magnam,
-                        possimus et ipsum voluptas inventore molestiae quod in delectus reprehenderit eos! Temporibus ut
-                        aspernatur eos obcaecati iste doloremque velit. Ut placeat est amet blanditiis delectus animi
-                        dignissimos dolorem eius!</p>
+            <div class="about-us__wrap">
+                <div class="about-us__box about-us__box--first">
+                    <div class="about-us__box-text">
+                        <p class="about-us__title">Witamy serdecznie</p>
+                        <p class="about-us__text"> na naszej stronie i zapraszamy do zapoznania się z najważniejszymi
+                            informacjami dotyczącymi usług wykonywanych w naszym studio.</p>
+                    </div>
+                    <div class="about-us__box-img about-us__box-img--first">
+
+                    </div>
                 </div>
-                <div class="about-us__box-img about-us__box-img--rev">
-                    <img src="https://unsplash.it/1370/770" alt="Zdjęcie wykonane w studiu Madam Glamm">
+                <div class="about-us__box about-us__box--second">
+                    <div class="about-us__box-text">
+                        <p class="about-us__title">Wszystkie nasze stylizacje</p>
+                        <p class="about-us__text">są wykmonywane z największym pietyzmem. Gwarantujemy obsługę na
+                            najwyższym
+                            poziomie z zachowaniem wszelkich standardów. Cały czas podnosimy swoje kwalifikacje, co
+                            potwierdzją certyfikaty z przebytych szkoleń i pokazów</p>
+                    </div>
+                    <div class="about-us__box-img about-us__box-img--second">
+                    </div>
+                </div>
+                <div class="about-us__box about-us__box--third">
+                    <div class="about-us__box-text">
+                        <p class="about-us__title">Wykonujemy usługi</p>
+                        <p class="about-us__text">nie tylko związane ze stylizacją paznokci dłoni i stóp, ale również
+                            zajmujemy się ich pielęgnacją, W naszej ofercie mamy zabiegi podologiczne wykonywane przez
+                            wykwalifikowany personel. </p>
+                    </div>
+                    <div class="about-us__box-img about-us__box-img--third">
+                    </div>
+                </div>
+                <div class="about-us__box about-us__box--fourth">
+                    <div class="about-us__box-text">
+                        <p class="about-us__title">Bezpieczeńśtwo i higienia</p>
+                        <p class="about-us__text">to podstawa wszelkich zabiegów kosmetycznych, dlatego używamy tylko
+                            sterylizowanych oraz jednorazowych narzędzi. Do sterylizacji używamy autoklawu klasy "B".
+                            Urządzenia tej klasy użuywane są w przychodniach i szpitalach. Wszystkie artykuły
+                            jednorazowe,
+                            od razu po zabiegu, są utylizowane</p>
+                    </div>
+                    <div class="about-us__box-img about-us__box-img--fourth">
+                    </div>
                 </div>
             </div>
         </section>
