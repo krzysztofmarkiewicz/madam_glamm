@@ -1,28 +1,8 @@
-let burger = document.getElementById('burger'),
-	 nav    = document.getElementById('main-nav'),
-	 slowmo = document.getElementById('slowmo');
+let nav    = document.getElementById('main-nav')
 
-burger.addEventListener('click', function(e){
-	this.classList.toggle('is-open');
+burger.addEventListener('click', function(){
 	nav.classList.toggle('is-open');
 });
 
-slowmo.addEventListener('click', function(e){
-	this.classList.toggle('is-slowmo');
-});
 
-/* Onload demo - dirty timeout */
-let clickEvent = new Event('click');
 
-window.addEventListener('load', function(e) {
-	slowmo.dispatchEvent(clickEvent);
-	burger.dispatchEvent(clickEvent);
-	
-	setTimeout(function(){
-		burger.dispatchEvent(clickEvent);
-		
-		setTimeout(function(){
-			slowmo.dispatchEvent(clickEvent);
-		}, 3500);
-	}, 5500);
-});

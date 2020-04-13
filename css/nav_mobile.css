@@ -1,7 +1,7 @@
 /* Design is the property of Stéphanie Walter
 https://stephaniewalter.design */
 
-.nav-mobile2 {
+.nav-mobile {
 	position: fixed;
 	width: 60px;
 	height: 60px;
@@ -19,7 +19,7 @@ https://stephaniewalter.design */
 	left: 0;
 	bottom: 0;
 	text-align: center;
-	background: #FFF;
+	background: none;
 	opacity: 0;
 	z-index: -1;
 	visibility: hidden;
@@ -39,33 +39,26 @@ https://stephaniewalter.design */
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: -15px;
-	background-color: rgb(202, 27, 124);
+	right: 80px;
+	background-color: rgba(202, 27, 123, 0.911);
 	transform-origin: 0 0;
-	transform: skew(-14deg) translateX(-120%);
 	transition: all .275s .1s;
 }
 
-.main-nav.is-open::before {
-	transform: skew(-14deg) translateX(0);
-}
 
 /* Skewing effect on menu links */
 .main-nav ul {
 	display: inline-flex;
 	flex-direction: column;
-	height: 93%;
-	/* Should be 100%, but we have a notice message :D */
+	
 	align-items: flex-end;
 	justify-content: center;
-	transform: translateX(-18%) skew(-16deg);
 }
 
 .main-nav li {
 	display: block;
 	margin: .5rem 0;
 	text-align: right;
-	transform: skew(16deg);
 }
 
 /* Apparition effect on links */
@@ -77,26 +70,6 @@ https://stephaniewalter.design */
 .main-nav.is-open a {
 	opacity: 1;
 	transform: translateY(0);
-}
-
-.main-nav li:nth-child(1) a {
-	transition: all 275ms 175ms
-}
-
-.main-nav li:nth-child(2) a {
-	transition: all 275ms 225ms
-}
-
-.main-nav li:nth-child(3) a {
-	transition: all 275ms 275ms
-}
-
-.main-nav li:nth-child(4) a {
-	transition: all 275ms 325ms
-}
-
-.main-nav li:nth-child(5) a {
-	transition: all 275ms 375ms
 }
 
 
@@ -145,38 +118,6 @@ https://stephaniewalter.design */
 	transition: all .275s;
 
 }
-
-.burger:after,
-.burger:before {
-	content: '';
-	display: block;
-	height: 100%;
-	background: #5A3B5D;
-	transition: all .275s;
-}
-
-.burger:after {
-	transform: translateY(-12px) translateX(-2px) skew(-20deg);
-}
-
-.burger:before {
-	transform: translateY(-16px) skew(-10deg);
-}
-
-/* Toggle State part */
-.is-open .burger {
-	transform: skew(5deg) translateY(-8px) rotate(-45deg);
-}
-
-.is-open .burger:before {
-	transform: translateY(0px) skew(-10deg) rotate(75deg);
-}
-
-.is-open .burger:after {
-	transform: translateY(-12px) translateX(10px) skew(-20deg);
-	opacity: 0;
-}
-
 /* MENU Text part */
 
 .burger-text {
