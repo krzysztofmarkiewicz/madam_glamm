@@ -32,25 +32,25 @@ function toggleState3() {
 }
 
 let imgObject = [
-    "../img/works/001.jpg",
-    "../img/works/002.jpg",
-    "../img/works/004.jpg",
-    "../img/works/005.jpg",
-    "../img/works/006.jpg",
-    "../img/works/007.jpg",
-    "../img/works/008.jpg",
-    "../img/works/009.jpg",
-    "../img/works/010.jpg",
-    "../img/works/011.jpg",
-    "../img/works/012.jpg",
-    "../img/works/013.jpg",
-    "../img/works/014.jpg",
-    "../img/works/015.jpg",
-    "../img/works/016.jpg",
-    "../img/works/017.jpg",
-    "../img/works/018.jpg",
-    "../img/works/019.jpg",
-    "../img/works/020.jpg"
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/002.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/001.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/005.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/004.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/006.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/007.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/008.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/009.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/010.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/011.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/012.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/013.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/014.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/015.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/016.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/017.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/018.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/019.jpg",
+    "https://krzysztofmarkiewicz.pl/other/madamglamm/img/works/020.jpg"
 ];
 
 let mainImg = 0;
@@ -70,7 +70,7 @@ function loadGallery() {
     let rightView = document.getElementById("rightView");
     rightView.style.background = "url(" + imgObject[nextImg] + ")";
     rightView.style.backgroundSize = "cover";
-    
+
     let linkTag = document.getElementById("linkTag")
     linkTag.href = imgObject[mainImg];
 
