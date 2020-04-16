@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,aAAa;EACzB,OAAO,EAAE,MAAM;CAAG",
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,aAAa;CAAG",
     "sources": [
         "../sass/xl.sass"
     ],
