@@ -1,0 +1,132 @@
+$main-color: rgb(202,27,124)
+
+.nav-mobile
+    display: none
+.nav-desktop
+    display: flex
+    justify-content: center
+    position: sticky
+    top: 0
+    background-color: $main-color
+    z-index: 100
+    ul
+        text-align: center
+        li
+            display: inline-block
+            padding: 10px 20px
+            transition: transform .3s
+            a
+                text-decoration: none
+                font-size: 2.5rem
+                line-height: 2.5rem
+                font-weight: bold
+                color: #ffffff
+        li:hover
+            transform: scale(1.4)
+            .nav-desktop
+
+.section-header::before
+    content: ''
+    display: block
+    height: 3rem
+    background-color: #fff
+header
+    flex-direction: row
+    height: 100%
+    .header-logo-img
+        padding: 30px
+    .header-text
+        margin-top: 100px
+        padding-right: 30px
+        .header-text-img
+            padding: 0px
+            width: 400px
+        .header-undertext
+            font-size: 2.5rem
+
+#about-us
+    .about-us__wrap
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(10, 1fr)
+        grid-column-gap: 20px
+        grid-row-gap: 20px
+        padding: 20px
+        .about-us__box
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            margin: 20px
+            border: 1px solid black
+            box-shadow: 2px 2px 5px black
+            .about-us__box-text
+                grid-area: 1 / 1 / 2 / 3
+                display: flex
+                flex-direction: column
+                justify-content: center
+                .about-us__title
+                    margin: 20px
+            .about-us__box-img
+                grid-area: 2 / 1 / 3 / 3
+                background-position-x: center
+        .about-us__box--first
+            grid-area: 1 / 1 / 5 / 2
+        .about-us__box--second
+            grid-area: 3 / 2 / 7 / 3
+        .about-us__box--third
+            grid-area: 5 / 1 / 9 / 2
+        .about-us__box--fourth
+            grid-area: 7 / 2 / 11 / 3
+        .about-us__box--fifth, .about-us__box--sixth
+            background-image: url('../img/polish-clipart-outline-4-transparent.png')
+            background-size: 70%
+            background-repeat: no-repeat
+            background-position: center
+        .about-us__box--fifth
+            grid-area: 9 / 1 / 11 / 2
+        .about-us__box--sixth
+            grid-area: 1 / 2 / 3 / 3
+
+#price-list
+    .prices-table
+        width: 75%
+        margin: 5rem auto
+#gallery
+    p
+        padding: 10px
+        font-size: 2rem
+#contact
+    .contact-wrap
+        display: flex
+        .contact-box
+            align-self: center
+            padding: 30px
+            a
+                font-size: 40px
+                letter-spacing: .5rem
+            a::before
+                position: relative
+                margin: 0 auto
+                display: block
+                content: ''
+                height: 3px
+                width: 100px
+                background-color: $main-color
+                top: 65px
+                opacity: 0
+                transition: opacity .3s
+
+            a:hover::before
+                opacity: 1
+        .adress
+            font-size: 1.8rem
+        .gmap
+            border: 1px solid black
+            iframe
+                width: 100%
+@media screen and ( max-width: 875px )
+    #contact
+        .contact-wrap
+            .contact-box
+                a
+                    font-size: 30px

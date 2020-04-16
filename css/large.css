@@ -1,0 +1,29 @@
+#about-us .about-us__wrap .about-us__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+#about-us .about-us__wrap .about-us__box .about-us__box-text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+#about-us .about-us__wrap .about-us__box .about-us__box-img {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 4 / 3;
+}
+
+#price-list .prices-table {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=large.css.map */

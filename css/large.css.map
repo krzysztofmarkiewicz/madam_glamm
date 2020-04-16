@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,SAFC,CACL,eAAe,CACX,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,kBAAkB,EAAE,cAAc;CAID;;AAT7C,AAMY,SANH,CACL,eAAe,CACX,cAAc,CAIV,mBAAmB,CAAC;EAChB,SAAS,EAAE,aAAa;CAAG;;AAP3C,AAQY,SARH,CACL,eAAe,CACX,cAAc,CAMV,kBAAkB,CAAC;EACf,SAAS,EAAE,aAAa;CAAG;;AAC3C,AACI,WADO,CACP,aAAa,CAAC;EACV,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/large.sass"
+    ],
+    "names": [],
+    "file": "large.css"
+}

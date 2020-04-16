@@ -1,0 +1,45 @@
+.nav-mobile {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 10px;
+	top: 5px;
+	right: 5px;
+	font-size: 1.5rem;
+	z-index: 10;
+}
+.main-nav {
+	position: fixed;
+	width: 180px;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+.main-nav.is-open {
+	/* opacity: 1; */
+	visibility: visible;
+	background-color: rgb(202, 27, 123);
+}
+.main-nav li {
+	display: block;
+	list-style: none;
+}
+.main-nav a {
+	display: block;
+	padding: 20px 0;
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+.fas{
+	position: fixed;
+	top: 13px;
+	right: 14px;
+	font-size: 35px;
+	color: rgb(202, 27, 123);
+	cursor: pointer;
+}
+
