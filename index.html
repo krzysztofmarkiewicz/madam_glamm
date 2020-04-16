@@ -16,92 +16,214 @@
 </head>
 
 <body>
-    <nav class="nav-mobile">
-        <div class="nav-mobile2"></div>
-        <button id="burger" class="open-main-nav">
-            <span class="burger"></span>
-            <span class="burger-text">Menu</span>
-        </button>
-        <div class="main-nav" id="main-nav">
+    <div class="wrapper">
+        <nav class="nav-mobile">
+            <span id="burger" class="fas fa-bars"></span>
+            <div class="main-nav" id="main-nav">
+                <ul>
+                    <div include-html="navigation.html"></div>
+                </ul>
+            </div>
+        </nav>
+        <nav class="nav-desktop">
             <ul>
                 <div include-html="navigation.html"></div>
             </ul>
-        </div>
-    </nav>
-    <nav class="nav-desktop">
-        <ul>
-            <div include-html="navigation.html"></div>
-        </ul>
-    </nav>
-    <header>
-        <img class="header-logo-img" src="img/Madame Glamm_logo_new_small.png" alt="logo firmy">
-        <div class="header-text">
-            <p class="header-undertext">Studio Stylizacji Paznokci</p>
-            <img class="header-text-img" src="img/Madame Glamm_logo_tekst_small.png" alt="nazwa firmy">
-        </div>
-    </header>
-    <main>
-        <section id="about-us">
-            <div class="section-header">
-                <h2>o nas dla Was</h2>
+        </nav>
+        <header>
+            <img class="header-logo-img" src="img/Madame Glamm_logo_new_small.png" alt="logo firmy">
+            <div class="header-text">
+                <p class="header-undertext">Studio Stylizacji Paznokci</p>
+                <img class="header-text-img" src="img/Madame Glamm_logo_tekst_small.png" alt="nazwa firmy">
             </div>
-            <div class="about-us__wrap">
-                <div class="about-us__box about-us__box--first">
-                    <div class="about-us__box-text">
-                        <p class="about-us__title">Witamy serdecznie</p>
-                        <p class="about-us__text"> na naszej stronie i zapraszamy do zapoznania się z najważniejszymi
-                            informacjami dotyczącymi usług wykonywanych w naszym studio.</p>
-                    </div>
-                    <div class="about-us__box-img about-us__box-img--first">
+        </header>
+        <main>
+            <section id="about-us">
+                <div class="section-header">
+                    <h2>o nas dla Was</h2>
+                </div>
+                <div class="about-us__wrap">
+                    <div class="about-us__box about-us__box--first">
+                        <div class="about-us__box-text">
+                            <p class="about-us__title">Witamy serdecznie</p>
+                            <p class="about-us__text"> na naszej stronie i zapraszamy do zapoznania się z
+                                najważniejszymi
+                                informacjami dotyczącymi usług wykonywanych w naszym studio.</p>
+                        </div>
+                        <div class="about-us__box-img about-us__box-img--first">
 
+                        </div>
+                    </div>
+                    <div class="about-us__box about-us__box--second">
+                        <div class="about-us__box-text">
+                            <p class="about-us__title">Wszystkie nasze stylizacje</p>
+                            <p class="about-us__text">są wykmonywane z największym pietyzmem. Gwarantujemy obsługę na
+                                najwyższym
+                                poziomie z zachowaniem wszelkich standardów. Cały czas podnosimy swoje kwalifikacje, co
+                                potwierdzją certyfikaty z przebytych szkoleń i pokazów</p>
+                        </div>
+                        <div class="about-us__box-img about-us__box-img--second">
+                        </div>
+                    </div>
+                    <div class="about-us__box about-us__box--third">
+                        <div class="about-us__box-text">
+                            <p class="about-us__title">Wykonujemy usługi</p>
+                            <p class="about-us__text">nie tylko związane ze stylizacją paznokci dłoni i stóp, ale
+                                również
+                                zajmujemy się ich pielęgnacją, W naszej ofercie mamy zabiegi podologiczne wykonywane
+                                przez
+                                wykwalifikowany personel. </p>
+                        </div>
+                        <div class="about-us__box-img about-us__box-img--third">
+                        </div>
+                    </div>
+                    <div class="about-us__box about-us__box--fourth">
+                        <div class="about-us__box-text">
+                            <p class="about-us__title">Bezpieczeństwo i higienia</p>
+                            <p class="about-us__text">to podstawa wszelkich zabiegów kosmetycznych, dlatego używamy
+                                tylko
+                                sterylizowanych oraz jednorazowych narzędzi. Do sterylizacji używamy autoklawu klasy
+                                "B".
+                                Urządzenia tej klasy używane są w przychodniach i szpitalach. Wszystkie artykuły
+                                jednorazowe
+                                od razu po zabiegu są utylizowane</p>
+                        </div>
+                        <div class="about-us__box-img about-us__box-img--fourth">
+                        </div>
+                    </div>
+                    <div class="about-us__box--fifth">
+                    </div>
+                    <div class="about-us__box--sixth">
                     </div>
                 </div>
-                <div class="about-us__box about-us__box--second">
-                    <div class="about-us__box-text">
-                        <p class="about-us__title">Wszystkie nasze stylizacje</p>
-                        <p class="about-us__text">są wykmonywane z największym pietyzmem. Gwarantujemy obsługę na
-                            najwyższym
-                            poziomie z zachowaniem wszelkich standardów. Cały czas podnosimy swoje kwalifikacje, co
-                            potwierdzją certyfikaty z przebytych szkoleń i pokazów</p>
-                    </div>
-                    <div class="about-us__box-img about-us__box-img--second">
-                    </div>
+            </section>
+            <section id="price-list">
+                <div class="section-header">
+                    <h2>cennik</h2>
                 </div>
-                <div class="about-us__box about-us__box--third">
-                    <div class="about-us__box-text">
-                        <p class="about-us__title">Wykonujemy usługi</p>
-                        <p class="about-us__text">nie tylko związane ze stylizacją paznokci dłoni i stóp, ale również
-                            zajmujemy się ich pielęgnacją, W naszej ofercie mamy zabiegi podologiczne wykonywane przez
-                            wykwalifikowany personel. </p>
-                    </div>
-                    <div class="about-us__box-img about-us__box-img--third">
-                    </div>
-                </div>
-                <div class="about-us__box about-us__box--fourth">
-                    <div class="about-us__box-text">
-                        <p class="about-us__title">Bezpieczeńśtwo i higienia</p>
-                        <p class="about-us__text">to podstawa wszelkich zabiegów kosmetycznych, dlatego używamy tylko
-                            sterylizowanych oraz jednorazowych narzędzi. Do sterylizacji używamy autoklawu klasy "B".
-                            Urządzenia tej klasy używane są w przychodniach i szpitalach. Wszystkie artykuły jednorazowe
-                            od razu po zabiegu są utylizowane</p>
-                    </div>
-                    <div class="about-us__box-img about-us__box-img--fourth">
-                    </div>
-                </div>
-                <div class="about-us__box about-us__box--fifth">
-                </div>
-                <div class="about-us__box about-us__box--sixth">
-                </div>
-            </div>
-        </section>
-        <section id="price-list">
-            <div class="section-header">
-                <h2>cennik</h2>
-            </div>
 
-        </section>
-    </main>
+                <table class="prices-table">
+                    <tr>
+                        <td class="price-list__text">Przedłużenie paznokci żel -kolor</td>
+                        <td class="price-list__price">110zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Uzupełnienie/korekta -kolor</td>
+                        <td class="price-list__price">od 85 zł - 95zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Utwardzenie naturalnych paznokci żelem -kolor</td>
+                        <td class="price-list__price">od 90zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Manicure hybrodowy -kolor</td>
+                        <td class="price-list__price">od 75zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Zdobienie paznokci:</td>
+                        <td class="price-list__price"></td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text"><span class="price-list__variant">Wzorki ręcznie malowane</span>
+                        </td>
+                        <td class="price-list__price">2,50-10 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text"><span class="price-list__variant">French/Babyboomer/Ombre</span>
+                        </td>
+                        <td class="price-list__price">1 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text"><span class="price-list__variant">Cyrkonie</span></td>
+                        <td class="price-list__price">0,50 zł/szt</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Naprawa złamanego paznokcia</td>
+                        <td class="price-list__price">10 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Manicure klasyczny <br><span
+                                class="price-list__additional">(wycięcie
+                                skórek, odżywka, oliwka, krem)</span></td>
+                        <td class="price-list__price">35 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Manicure japoński P.Shine <br><span
+                                class="price-list__additional">(wzmacniający płytkę paznokcia)</span></td>
+                        <td class="price-list__price">50 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Parafna na dłonie</td>
+                        <td class="price-list__price">30 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Usunięcie żelu, hybrydy</td>
+                        <td class="price-list__price">35 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Pedicure SPA <br><span class="price-list__additional">(opracowanie
+                                paznokci, usunięcie zrogowaceń, peeling, krem)</span></td>
+                        <td class="price-list__price">70 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Kolor hybrydowy, żelowy na stopach</td>
+                        <td class="price-list__price">60 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Kolor hybrydowy, żelowy na stopach</td>
+                        <td class="price-list__price">60 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Pedicure SPA + kolor hybrydowy</td>
+                        <td class="price-list__price">120 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Pedicure męski</td>
+                        <td class="price-list__price">70 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__text">Masaż stóp</td>
+                        <td class="price-list__price">30 zł</td>
+                    </tr>
+                </table>
 
+            </section>
+            <section id="gallery">
+                <div class="section-header">
+                    <h2>galeria</h2>
+                </div>
+                <div class="carousel"></div>
+            </section>
+            <section id="contact">
+                <div class="section-header">
+                    <h2>kontakt</h2>
+                </div>
+                <div class="contact-wrap">
+                    <div class="contact-box">
+                        <p><a href="https://www.instagram.com/madamglamm/" target="_blank"><i
+                                    class="fa fa-instagram"></i> INSTAGRAM</a>
+                        </p>
+                        <p><a href="https://www.facebook.com/Madam-Glamm-Stylizacja-Paznokci-Monika-Markiewicz-219639335293836/"
+                                target="_blank"><i class="fa fa-facebook"></i> FACEBOOK</a></p>
+                        <p><a href="tel:+48 602 678 049"><i class="fa fa-phone"></i> 602 678 049</a></p>
+                    </div>
+                    <div class="contact-box">
+
+                        <p class="adress">Adres: ul. Kijowska 55, 40-754 Katowice</p>
+
+                        <div class="gmap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.0768685474245!2d18.96224993924949!3d50.23446884076944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cf2915c64331%3A0x82bf79fc5d0364d8!2sMadam%20Glamm%20Stylizacja%20Paznokci!5e0!3m2!1spl!2spl!4v1586985907749!5m2!1spl!2spl"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;2020 Madam Glamm</p>
+        </footer>
+    </div>
 
 
     <script src="js/nav-mobile.js"></script>
@@ -110,6 +232,7 @@
     <script>
         includeHTML();
     </script>
+
 </body>
 
 </html>

@@ -16,17 +16,19 @@ $main-color: rgb(202,27,124)
             transition: transform .3s
             a
                 text-decoration: none
-                font-size: 2rem
-                line-height: 2rem
+                font-size: 2.5rem
+                line-height: 2.5rem
                 font-weight: bold
                 color: #ffffff
         li:hover
             transform: scale(1.4)
+            .nav-desktop
+
 .section-header::before
-        content: ''
-        display: block
-        height: 3rem
-        background-color: #fff
+    content: ''
+    display: block
+    height: 3rem
+    background-color: #fff
 header
     flex-direction: row
     height: 100%
@@ -53,7 +55,6 @@ header
             display: grid
             grid-template-columns: repeat(2, 1fr)
             grid-template-rows: repeat(2, 1fr)
-            background-color: white
             margin: 20px
             border: 1px solid black
             box-shadow: 2px 2px 5px black
@@ -63,15 +64,9 @@ header
                 flex-direction: column
                 justify-content: center
                 .about-us__title
-                    margin-bottom: 20px
-                    font-size: 2.6rem
-                    font-weight: bold
-                .about-us__text
-                    font-size: 1.6rem
+                    margin: 20px
             .about-us__box-img
                 grid-area: 2 / 1 / 3 / 3
-                background-size: cover
-                background-repeat: no-repeat
                 background-position-x: center
         .about-us__box--first
             grid-area: 1 / 1 / 5 / 2
@@ -83,12 +78,50 @@ header
             grid-area: 7 / 2 / 11 / 3
         .about-us__box--fifth, .about-us__box--sixth
             background-image: url('../img/polish-clipart-outline-4-transparent.png')
-            background-size: 50%
-            background-position: center
+            background-size: 70%
             background-repeat: no-repeat
-            border: none
-            box-shadow: none
+            background-position: center
         .about-us__box--fifth
             grid-area: 9 / 1 / 11 / 2
         .about-us__box--sixth
             grid-area: 1 / 2 / 3 / 3
+
+#price-list
+    .prices-table
+        width: 75%
+        margin: 5rem auto
+#contact
+    .contact-wrap
+        display: flex
+        .contact-box
+            align-self: center
+            padding: 30px
+            a
+                font-size: 40px
+                letter-spacing: .5rem
+            a::before
+                position: relative
+                margin: 0 auto
+                display: block
+                content: ''
+                height: 3px
+                width: 100px
+                background-color: $main-color
+                top: 65px
+                opacity: 0
+                transition: opacity .3s
+
+            a:hover::before
+                opacity: 1
+        .adress
+            font-size: 1.8rem
+        .gmap
+            border: 1px solid black
+            iframe
+                width: 100%
+@media screen and ( max-width: 875px )
+    #contact
+        .contact-wrap
+            .contact-box
+                a
+                    font-size: 30px

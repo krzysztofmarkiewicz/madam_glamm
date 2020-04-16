@@ -21,4 +21,8 @@
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 4 / 3;
 }
+
+#price-list .prices-table {
+  font-size: 2rem;
+}
 /*# sourceMappingURL=large.css.map */

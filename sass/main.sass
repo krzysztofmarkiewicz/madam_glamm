@@ -8,21 +8,23 @@ html
     font-size: 10px
 
 body
-    background-color: #fff
+    background-color: #fdf6fc
     font-family: 'Lato', sans-serif
+.wrapper
+    background-color: #fff
 
 .nav-desktop
     display: none
 
 .section-header
-        font-size: 3rem
-        text-align: center
-        margin: 0 auto
-        background: $main-color
-        color: white
-        text-shadow: 2px 2px 3px black
-        h2
-            padding: 10px 0
+    font-size: 3rem
+    text-align: center
+    margin: 0 auto
+    background: $main-color
+    color: white
+    text-shadow: 2px 2px 3px black
+    h2
+        padding: 10px 0
 
 header
     display: flex
@@ -51,13 +53,10 @@ header
             ggrid-template-columns: repeat(2, 1fr)
             grid-template-rows: repeat(3, 1fr)
             margin: 20px 0
-            background-color: white
             .about-us__box-text
                 grid-area: 1 / 1 / 2 / 3
                 padding: 0 20px
-                color: black
                 text-align: center
-
                 .about-us__title
                     font-size: 2.6rem
                     font-weight: bold
@@ -75,8 +74,78 @@ header
                 background-image: url('../img/people-2583493_640.jpg')
             .about-us__box-img--third
                 background-image: url('../img/fupflege-5012705_640.jpg')
-                background-position: 0% 0%
-
             .about-us__box-img--fourth
                 background-image: url('../img/manitools.jpg')
         .about-us__box--fifth, .about-us__box--sixth
+            // display: none
+
+#price-list
+    .prices-table
+        width: 100%
+        margin: 2.5rem auto
+        font-size: 1rem
+        line-height: 1.5
+        border-spacing: 0
+        tr
+            td
+                padding: 10px 20px
+                border-bottom: .2px solid $main-color
+        tr:first-child
+            td
+                border-top: .2px solid $main-color
+        tr:nth-child(odd)
+            background-color: #faf1f8
+        .price-list__text
+            padding-right: 20px
+            .price-list__variant
+                margin-left: 20px
+            .price-list__additional
+                display: none
+        .price-list__price
+            text-align: right
+
+#gallery
+    .carousel
+        height: 200px
+
+#contact
+    .contact-box
+        width: 100%
+        padding: 10px
+        text-align: center
+        p
+            display: inline-block
+            padding: 20px
+            a
+                font-size: 30px
+                font-weight: bold
+                text-decoration: none
+                color: $main-color
+
+        .adress
+            padding: 10px 0
+            font-size: 1.3rem
+            font-weight: bold
+            color: $main-color
+        .gmap
+            border: 1px solid black
+            height: 300px
+            iframe
+                width: 100%
+                height: 100%
+footer
+    background-color: $main-color
+    font-size: 1.5rem
+    line-height: 2
+    text-align: center
+    color: white
+
+@media screen and ( min-width: 450px )
+    #price-list
+        .prices-table
+            font-size: 1.3rem
+    #contact
+        .contact-box
+            .adress
+                padding: 20px 0
+                font-size: 1.8rem

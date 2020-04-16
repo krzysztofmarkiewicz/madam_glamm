@@ -30,8 +30,8 @@
 
 .nav-desktop ul li a {
   text-decoration: none;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   font-weight: bold;
   color: #ffffff;
 }
@@ -93,7 +93,6 @@ header .header-text .header-undertext {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  background-color: white;
   margin: 20px;
   border: 1px solid black;
   -webkit-box-shadow: 2px 2px 5px black;
@@ -119,13 +118,7 @@ header .header-text .header-undertext {
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-text .about-us__title {
-  margin-bottom: 20px;
-  font-size: 2.6rem;
-  font-weight: bold;
-}
-
-#about-us .about-us__wrap .about-us__box .about-us__box-text .about-us__text {
-  font-size: 1.6rem;
+  margin: 20px;
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-img {
@@ -134,8 +127,6 @@ header .header-text .header-undertext {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 3 / 3;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-x: center;
 }
 
@@ -173,12 +164,9 @@ header .header-text .header-undertext {
 
 #about-us .about-us__wrap .about-us__box--fifth, #about-us .about-us__wrap .about-us__box--sixth {
   background-image: url("../img/polish-clipart-outline-4-transparent.png");
-  background-size: 50%;
-  background-position: center;
+  background-size: 70%;
   background-repeat: no-repeat;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background-position: center;
 }
 
 #about-us .about-us__wrap .about-us__box--fifth {
@@ -195,5 +183,64 @@ header .header-text .header-undertext {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 3 / 3;
+}
+
+#price-list .prices-table {
+  width: 75%;
+  margin: 5rem auto;
+}
+
+#contact .contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .contact-wrap .contact-box {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 30px;
+}
+
+#contact .contact-wrap .contact-box a {
+  font-size: 40px;
+  letter-spacing: .5rem;
+}
+
+#contact .contact-wrap .contact-box a::before {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  content: '';
+  height: 3px;
+  width: 100px;
+  background-color: #ca1b7c;
+  top: 65px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+#contact .contact-wrap .contact-box a:hover::before {
+  opacity: 1;
+}
+
+#contact .contact-wrap .adress {
+  font-size: 1.8rem;
+}
+
+#contact .contact-wrap .gmap {
+  border: 1px solid black;
+}
+
+#contact .contact-wrap .gmap iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 875px) {
+  #contact .contact-wrap .contact-box a {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=medium.css.map */

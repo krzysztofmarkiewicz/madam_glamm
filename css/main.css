@@ -10,8 +10,12 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #fdf6fc;
   font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
 }
 
 .nav-desktop {
@@ -79,7 +83,6 @@ header .header-text .header-undertext {
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
   margin: 20px 0;
-  background-color: white;
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-text {
@@ -89,7 +92,6 @@ header .header-text .header-undertext {
   -ms-grid-column-span: 2;
   grid-area: 1 / 1 / 2 / 3;
   padding: 0 20px;
-  color: black;
   text-align: center;
 }
 
@@ -124,10 +126,103 @@ header .header-text .header-undertext {
 
 #about-us .about-us__wrap .about-us__box .about-us__box-img--third {
   background-image: url("../img/fupflege-5012705_640.jpg");
-  background-position: 0% 0%;
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-img--fourth {
   background-image: url("../img/manitools.jpg");
+}
+
+#price-list .prices-table {
+  width: 100%;
+  margin: 2.5rem auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-spacing: 0;
+}
+
+#price-list .prices-table tr td {
+  padding: 10px 20px;
+  border-bottom: 0.2px solid #ca1b7c;
+}
+
+#price-list .prices-table tr:first-child td {
+  border-top: 0.2px solid #ca1b7c;
+}
+
+#price-list .prices-table tr:nth-child(odd) {
+  background-color: #faf1f8;
+}
+
+#price-list .prices-table .price-list__text {
+  padding-right: 20px;
+}
+
+#price-list .prices-table .price-list__text .price-list__variant {
+  margin-left: 20px;
+}
+
+#price-list .prices-table .price-list__text .price-list__additional {
+  display: none;
+}
+
+#price-list .prices-table .price-list__price {
+  text-align: right;
+}
+
+#gallery .carousel {
+  height: 200px;
+}
+
+#contact .contact-box {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#contact .contact-box p {
+  display: inline-block;
+  padding: 20px;
+}
+
+#contact .contact-box p a {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ca1b7c;
+}
+
+#contact .contact-box .adress {
+  padding: 10px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ca1b7c;
+}
+
+#contact .contact-box .gmap {
+  border: 1px solid black;
+  height: 300px;
+}
+
+#contact .contact-box .gmap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #ca1b7c;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 450px) {
+  #price-list .prices-table {
+    font-size: 1.3rem;
+  }
+  #contact .contact-box .adress {
+    padding: 20px 0;
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
