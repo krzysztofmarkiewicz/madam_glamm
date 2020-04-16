@@ -13,6 +13,7 @@
   position: sticky;
   top: 0;
   background-color: #ca1b7c;
+  z-index: 100;
 }
 
 .nav-desktop ul {
@@ -188,6 +189,11 @@ header .header-text .header-undertext {
 #price-list .prices-table {
   width: 75%;
   margin: 5rem auto;
+}
+
+#gallery p {
+  padding: 10px;
+  font-size: 2rem;
 }
 
 #contact .contact-wrap {

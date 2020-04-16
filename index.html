@@ -12,6 +12,7 @@
     <link rel="stylesheet" media="(min-width: 992px)" href="css/large.css">
     <link rel="stylesheet" media="(min-width: 1200px)" href="css/xl.css">
     <link rel="stylesheet" href="css/nav_mobile.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <script src="https://kit.fontawesome.com/b7615cb9e7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -192,7 +193,34 @@
                 <div class="section-header">
                     <h2>galeria</h2>
                 </div>
-                <div class="carousel"></div>
+
+                    <div id="container">
+                        <div id="toggleContainer">
+                            <label>Carousel</label>
+                            <div id="toggle">
+                                <div id="outer3">
+                                    <div id="slider3"></div>
+                                </div>
+                                <label>Tiles</label>
+                            </div>
+                        </div>
+                        <div id="galleryView">
+                            <div id="galleryContainer">
+                                <div id="leftView"></div>
+                                <button id="navLeft" class="navBtns"></button>
+                                <a id="linkTag">
+                                    <div id="mainView"></div>
+                                </a>
+                                <div id="rightView"></div>
+                                <button id="navRight" class="navBtns"></button>
+                            </div>
+                        </div>
+                        <div id="tilesView">
+                            <div id="tilesContainer"></div>
+                        </div>
+                    </div><p>Po więcej fotografi naszych prac zapraszamy na nasz Instagram oraz Facebook </p>
+                
+                
             </section>
             <section id="contact">
                 <div class="section-header">
@@ -227,7 +255,7 @@
 
 
     <script src="js/nav-mobile.js"></script>
-    <script src="js/nav-repair.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
     <script>
         includeHTML();

@@ -12,7 +12,12 @@
 }
 
 #price-list .prices-table {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+#gallery p {
+  padding: 10px;
+  font-size: 1.6rem;
 }
 
 #contact .contact-box .adress {

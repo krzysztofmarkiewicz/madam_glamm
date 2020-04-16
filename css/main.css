@@ -82,7 +82,7 @@ header .header-text .header-undertext {
   ggrid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  margin: 20px 0;
+  overflow: hidden;
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-text {
@@ -91,8 +91,10 @@ header .header-text .header-undertext {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 1 / 1 / 2 / 3;
-  padding: 0 20px;
+  padding: 20px;
   text-align: center;
+  background-color: white;
+  z-index: 1;
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-text .about-us__title {
@@ -110,10 +112,18 @@ header .header-text .header-undertext {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 4 / 3;
-  margin-top: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+#about-us .about-us__wrap .about-us__box .about-us__box-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #about-us .about-us__wrap .about-us__box .about-us__box-img--first {
@@ -169,8 +179,10 @@ header .header-text .header-undertext {
   text-align: right;
 }
 
-#gallery .carousel {
-  height: 200px;
+#gallery p {
+  margin: 0 10px 10px 10px;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 #contact .contact-box {
@@ -199,7 +211,8 @@ header .header-text .header-undertext {
 }
 
 #contact .contact-box .gmap {
-  border: 1px solid black;
+  -webkit-box-shadow: 0 -1px 5px black;
+          box-shadow: 0 -1px 5px black;
   height: 300px;
 }
 
@@ -219,6 +232,11 @@ footer {
 @media screen and (min-width: 450px) {
   #price-list .prices-table {
     font-size: 1.3rem;
+  }
+  #gallery p {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
   }
   #contact .contact-box .adress {
     padding: 20px 0;
