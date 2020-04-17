@@ -99,24 +99,27 @@ header
     .contact-wrap
         display: flex
         .contact-box
+            position: relative
             align-self: center
             padding: 30px
-            a
-                font-size: 40px
-                letter-spacing: .5rem
-            a::before
+            p
                 position: relative
+
+                a
+                    font-size: 40px
+                    letter-spacing: .5rem
+            p::before
+                position: absolute
                 margin: 0 auto
-                display: block
                 content: ''
                 height: 3px
-                width: 100px
+                width: 50%
+                transform: translateX(40%)
                 background-color: $main-color
-                top: 65px
+                top: 60px
                 opacity: 0
                 transition: opacity .3s
-
-            a:hover::before
+            p:hover::before
                 opacity: 1
         .adress
             font-size: 1.8rem
@@ -128,5 +131,6 @@ header
     #contact
         .contact-wrap
             .contact-box
-                a
-                    font-size: 30px
+                p
+                    a
+                        font-size: 30px
